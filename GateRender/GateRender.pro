@@ -1,4 +1,4 @@
-QT       += core gui
+QT += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -22,3 +22,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+INCLUDEPATH += "D:\GateRender\Frontend\WorkingSpace"
+LIBS += -L"D:/GateRender/Frontend/WorkingSpace/build/Desktop_Qt_6_7_1_MinGW_64_bit-Debug/debug" -lWorkingSpace
